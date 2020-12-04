@@ -69,17 +69,27 @@
 
     
     
-    <section class="contact" id="contact">
-        <h2 class="text-center">Contact Us</h2>
-        <div class="form">
-            <input type="text" name="name" id="name" placeholder="Enter your Name ">
-            <input type="text" name="phone" id="phone" placeholder="Enter your Phone ">
-            <input type="text" name="email" id="email" placeholder="Enter your Email ">
-            <textarea name="textarea" class="textarea form"id="textarea" cols="40" rows="4"></textarea>
-            <button class="btn-dark form">Submit</button>
-     
-        </div>
-    </section>
+    <h2 class="text-center">Contact Us</h2>
+        <form action="https://formspree.io/f/xayldgqy" method="POST" class="form">
+            <label>
+                Your Name:
+                <input type="text" name="name" id="name" placeholder="Enter your Name ">
+            </label>
+            
+            
+            <label>
+                Your email:
+                <input type="text" name="_replyto"  id="email" placeholder="Enter your Email ">
+            </label>
+            <label>
+                Your message:
+                <textarea name="message" class="textarea form"id="textarea" cols="40" rows="4"></textarea>
+            </label>
+
+            <!-- your other form fields go here -->
+
+            <button class="btn-dark form" type="submit">Send</button>
+        </form>
     <footer class="background ">
         <p class="text-footer">
             Copyright &copy; 2020 - All rights reserved
