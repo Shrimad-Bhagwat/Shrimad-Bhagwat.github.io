@@ -105,7 +105,7 @@ h1 {
   padding: 5px;
 }
 h1 a {
-  font-size: 35px;
+  font-size: 33px;
   color: #c5c6c7;
 }
 .intro-bottom {
@@ -136,7 +136,7 @@ h1 a {
 .home-column {
   float: left;
   width: 50%;
-  padding: 10px;
+  padding: 10px 2px;
   height: auto;
   
 }
@@ -222,7 +222,7 @@ nav .menu-btn i{
 
 
 .row {
-  margin: 8px 16px;
+  margin: 8px 2px;
 }
 
 /* Add padding BETWEEN each column (if you want) */
@@ -476,7 +476,7 @@ footer h4
     height: auto;
   }
   .about p {
-    padding: 20px 60px;
+    padding: 20px ;
   }
   .about img {
     width: 25%;
