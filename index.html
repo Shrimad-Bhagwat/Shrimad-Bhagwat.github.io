@@ -3,98 +3,211 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shrimad Bhagwat</title>
-    <link rel="stylesheet" href="static/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-    
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Shrimad's Portfolio</title>
 </head>
-<style>
-    .background{
-        background: rgba(0, 0, 0, 0.7) url(static/bg.jpg)
-    }
-</style>
 
 <body>
-    
-  
-    <nav class="navbar background h-nav">
-        <ul class="nav-list v-class">
-            <div class="logo"><img src="static/BEST LOGO.jpg" alt="logo"></div>
-            <li><a href="#home">Home</a></li>
+    <!-- Navbar -->
+    <nav class="sticky">
+        <a href="#"><div class="logo">SB</div></a>
+        <input type="checkbox" id="click">
+        <label for="click" class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+
         </ul>
-        <div class="rightNav v-class">
-            <input type="text" name="search" id="search">
-            <button class="btn-sm">Search</button>
-
-
-        </div>
-        <div class="burger">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-        </div>
     </nav>
+    
 
-    <section class="background firstSection" id="home">
-        <div class="box-main">
-            <div class="firstHalf">
-                <p class="text-big">Shrimad Bhagwat</p>
-                <p class="text-small">Talk is Cheap, Show me the Code.</p>
-                <div class="buttons">
-                    
+    <!-- Home Page -->
+    <div class="container home-row">
+
+        <!-- Left Side -->
+        <div class="name home-column">
+            <h1 class="intro-top">Hey,</h1>
+            <h1 class="intro-bottom">I'm Shrimad Bhagwat</h1>
+            <h1>
+                <a href="" class="typewrite" data-period="2000"
+                    data-type='[ "A  Programmer.", "A  Web  Designer.", "A  Gamer." ]'>
+                    <span class="wrap"></span>
+                </a>
+            </h1>
+        </div>
+
+        <!-- Right Side -->
+        <div class="right home-column">
+            <img src="img/coder.png" alt="coder" class="coder">
+            <div class="social-media">
+                <a target="_blank" href="https://github.com/Shrimad-Bhagwat"><img src="icons/github.svg" alt="github" class="filter"></a>
+                <a target="_blank" href="https://www.instagram.com/show_me_the_code_/" ><img src="icons/instagram.svg" alt="ig" class="filter"></a>
+                <a target="_blank" href="https://www.linkedin.com/in/shrimad-bhagwat-a7a879201/"><img src="icons/linkedin.svg" alt="linkedin" class="filter"></a>
+                <a target="_blank" href="https://www.facebook.com/"><img src="icons/facebook.svg" alt="fb" class="filter"></a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- About -->
+    <div class="about" id="about" data-aos="fade-up"  data-aos-duration="500">
+        <h2>ABOUT</h2>
+        <img src="img/SHRI.jpg" alt="shri">
+        <h3>Shrimad Bhagwat</h3>
+        
+        <p>&nbsp; &nbsp; &nbsp; &nbsp; Hello, I am Shrimad Bhagwat. A B.Tech. Computer Science student at Vellore Institue of Technology, Bhopal.</p> 
+        <p> &nbsp; &nbsp; &nbsp; &nbsp;I'm a self taught Programmer and Web Developer. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed aspernatur delectus excepturi aliquid qui necessitatibus blanditiis. Nemo quasi sequi saepe.</p>
+
+    </div>
+
+    <!-- Projects -->
+
+    <div class="projects" id="projects" data-aos="fade-up"  data-aos-duration="500">
+        <h2>PROJECTS</h2>
+        <!-- Portfolio Gallery Grid -->
+        <div class="row">
+            <div class="column">
+            <a href="https://drive.google.com/file/d/1RaqfNJgeo-WB4IA65HKnqh4vvX_zJ44e/view?usp=sharing">
+                <div class="content">
+                <img src="img/projects/blender car model.JPG" alt="Blender" style="width:100%">
+                <h3>Blender Modelling</h3>
+                <p>Modelled a Low Polygon Car in Blender and created an animation using it. </p>
+            </div>
+        </a>
+            </div>
+
+            <div class="column">
+            <a href="#"><div class="content">
+                <img src="img/projects/PORTFOLIO.jpg" alt="Web Design" style="width:100%">
+                <h3>Web Design</h3>
+                <p>Designed a Web Page for my Portfolio. </p>
+            </div></a>
+            </div>
+
+            <div class="column">
+            <a href="https://drive.google.com/file/d/1U5TL9e1g2boNbhaezx-EbFk0jwZl0YyB/view?usp=sharing">
+                <div class="content">
+                <img src="img/projects/space invaders.JPG" alt="Web Design" style="width:100%">
+                <h3>Python Game </h3>
+                <p>Created a Python Game using PyGame module. It's name is Space Invaders and it is an Arcade game.</p>
+            </div></a>
+            </div>
+            
+            <div class="column">
+                <a href="https://drive.google.com/file/d/1HeTQxUw57N0Ub7KJEksratvFRMqUfpnm/view?usp=sharing">
+                    <div class="content">
+                    <img src="img/projects/dodge car racing.JPG" alt="Game" style="width:100%">
+                    <h3>Python Game</h3>
+                    <p>Created a Python Game using PyGame module. It's name is Dodge Car Racing.</p>
+                </div></a>
+                </div>
+                
+            <div class="column">
+            <a href="https://drive.google.com/file/d/1DLq5ZJPIJKsMyqsqZds8Oq3x1qIncOcG/view?usp=sharing">
+                <div class="content">
+                <img src="img/projects/SWORD.png" alt="Blender" style="width:100%">
+                <h3>Blender Modelling</h3>
+                <p>Created a Sword Model in Blender.</p>
+            </div></a>
+            </div>
+            <div class="column">
+            <a href="https://drive.google.com/drive/folders/1h3uuVm4l2VVCcAWQ-p4a5qtMFCT580nw?usp=sharing">
+                <div class="content">
+                <img src="img/projects/Connect 3 Game.JPG" alt="Android Studio" style="width:100%">
+                <h3>Android Game</h3>
+                <p>Created a basic Android Game called Connect 3 similar to Tic Tac Toe.</p>
+            </div></a>
+            </div>
+        </div>
+
+
+
+
+    </div>
+    <!-- Skills -->
+    <div class="skills" id="skills" data-aos="fade-up" data-aos-duration="500">
+        <h2>SKILLS</h2>
+
+        <p>HTML</p>
+        <div class="skills-container">
+        <div class="skill html " >90%</div>
+        </div>
+        
+        <p>Python</p>
+        <div class="skills-container">
+        <div class="skill py">80%</div>
+        </div>
+        
+        <p>C++</p>
+        <div class="skills-container">
+        <div class="skill cpp">75%</div>
+        </div>
+
+        <p>CSS</p>
+        <div class="skills-container">
+        <div class="skill css">70%</div>
+        </div>
+
+        
+        <p>Video Editing</p>
+        <div class="skills-container">
+        <div class="skill vde">65%</div>
+        </div>
+
+        <p>Blender</p>
+        <div class="skills-container">
+        <div class="skill bl">60%</div>
+        </div>
+
+    </div>
+
+    <!-- Contact -->
+
+    <div class="contact" id="contact" data-aos="fade-up" data-aos-duration="500">
+        <h2>CONTACT</h2>
+        <div class="social-media">
+            <a target="_blank" href="https://github.com/Shrimad-Bhagwat"><img src="icons/github.svg" alt="github" class="filter"></a>
+            <a target="_blank" href="https://www.instagram.com/show_me_the_code_/" ><img src="icons/instagram.svg" alt="ig" class="filter"></a>
+            <a target="_blank" href="https://www.linkedin.com/in/shrimad-bhagwat-a7a879201/"><img src="icons/linkedin.svg" alt="linkedin" class="filter"></a>
+            <a target="_blank" href="https://www.facebook.com/"><img src="icons/facebook.svg" alt="fb" class="filter"></a>
+        </div>
+        <!-- <h4>sybbhagwat010102@gmail.com</h4> -->
+        <form action="" method="GET">
+            <div class="contact-container">
+                
+                <div class="contact-wrapper">
+                    <p>Your Name : <input type="text" name="name" required placeholder="John Wick"></p>
+                    <p>Your Email : <input type="email" name="mail" required placeholder="abc@email.com"></p>
+                    <p>Message : <textarea name="message" cols="30" rows="5" placeholder="Enter your Message here."></textarea></p>
+                    <p>City : <input type="text" name="city" required  placeholder="City name"></p>
+                    <input type="submit" value="Send">
                 </div>
             </div>
-            <div class="secondHalf">
-                <img src="static/BEST LOGO.jpg" alt="">
-            </div>
-
-        </div>
-
-    </section>
-    <section class="section" id="about">
-        <div class="paras">
-            <p class="sectionTag text-big">The End of your search</p>
-            <p class="sectionSubTag text-small"> <br>   &emsp;- Shrimad Bhagwat</p>
-        </div>
-        <div class="thumbnail">
-            <img src="https://source.unsplash.com/900x900/?coding,programming" alt="image" class="imgFluid">
-        </div>
-    </section>
-
-    
-    
-    <h2 class="text-center">Contact Us</h2>
-        <form action="https://formspree.io/f/xayldgqy" method="POST" class="form">
-            <label>
-                Your Name:
-                <input type="text" name="name" id="name" placeholder="Enter your Name ">
-            </label>
+            </form>
             
-            
-            <label>
-                Your email:
-                <input type="text" name="_replyto"  id="email" placeholder="Enter your Email ">
-            </label>
-            <label>
-                Your message:
-                <textarea name="message" class="textarea form"id="textarea" cols="40" rows="4"></textarea>
-            </label>
 
-            <!-- your other form fields go here -->
 
-            <button class="btn-dark form" type="submit">Send</button>
-        </form>
-    <footer class="background ">
-        <p class="text-footer">
-            Copyright &copy; 2020 - All rights reserved
-        </p>
-
+    </div>
+    <footer>
+        <h4>Created by Shrimad Bhagwat | &copy; 2021 All rights reserved.</h4>
+        
     </footer>
-    <script src="static/resp.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 
 </html>
